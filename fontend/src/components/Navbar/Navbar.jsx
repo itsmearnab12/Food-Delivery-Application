@@ -17,11 +17,12 @@ const Navbar = ({ setShowLogin }) => {
                 <a href='#footer' onClick={() => setmenu("contact-us")} className={menu === "contact-us" ? "active" : ""}>contact us</a>
             </ul>
             <div className='navbar-right'>
-                <Link to='/cart'><img src={assets.search_icon} alt="" /></Link>
-                <div className="navbar-search-icon">
+                <img src={assets.search_icon} alt="" />
+                <Link to='/cart'><div className="navbar-search-icon">
                     <img src={assets.basket_icon} alt="" />
                     <div className="dot"></div>
                 </div>
+                </Link>
                 <button onClick={() => setShowLogin(true)}>sign in</button>
             </div>
         </div>
