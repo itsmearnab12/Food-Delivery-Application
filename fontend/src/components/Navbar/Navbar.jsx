@@ -18,11 +18,10 @@ const Navbar = ({ setShowLogin }) => {
             </ul>
             <div className='navbar-right'>
                 <img src={assets.search_icon} alt="" />
-                <Link to='/cart'><div className="navbar-search-icon">
-                    <img src={assets.basket_icon} alt="" />
+                <div className="navbar-search-icon">
+                    <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
                     <div className="dot"></div>
                 </div>
-                </Link>
                 <button onClick={() => setShowLogin(true)}>sign in</button>
             </div>
         </div>
